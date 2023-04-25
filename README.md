@@ -69,9 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Photo Contributions/Shout-Outs
+### Photo/Logo Contributions/Shout-Outs/Attribution
 
 Photo by <a href="https://unsplash.com/@zetong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zetong Li</a> on <a href="https://unsplash.com/photos/nOXYjxk4E00?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+<a href="https://www.freepik.com/free-vector/social-media-logo-collection_10363326.htm#query=social%20media%20icon&position=3&from_view=keyword&track=robertav1_2_sidr">Image by myriammira</a> on Freepik
 
 
   
