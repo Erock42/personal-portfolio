@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
@@ -8,10 +8,14 @@ import navIcon4 from "../assets/img/github.svg";
 
 
 //font awesome icons?
-{/*import { CiFacebook } from "react-icons/ci";
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";*/}
-
-
+                /*import { CiFacebook } from "react-icons/ci";
+                import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";*/
+ 
+// Social media icons- img or font awesome?
+                /*<a href="#"><img src={<CiFacebook />} alt="facebook" /></a>
+                <a href="#"><img src={<AiOutlineGithub />} alt="github" /></a>
+                <a href="#"><img src={<AiOutlineLinkedin />} alt="linkedin" /></a>
+                <a href="#"><img src={<AiOutlineInstagram />} alt="instagram" /></a>*/
 
 
 export const NavBar = () => {
@@ -60,19 +64,13 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
               
-            // Social media icons- img or font awesome?
-                {/*<a href="#"><img src={<CiFacebook />} alt="facebook" /></a>
-                <a href="#"><img src={<AiOutlineGithub />} alt="github" /></a>
-                <a href="#"><img src={<AiOutlineLinkedin />} alt="linkedin" /></a>
-                <a href="#"><img src={<AiOutlineInstagram />} alt="instagram" /></a>*/}
-
                 <a href="#"><img src={navIcon1} alt="facebook" /></a>
-                <a href="#"><img src={} alt="github" /></a>
-                <a href="#"><img src={} alt="linkedin" /></a>
-                <a href="#"><img src={} alt="instagram" /></a>
-                
+                <a href="#"><img src={navIcon2} alt="instagram" /></a>
+                <a href="#"><img src={navIcon3} alt="linkedin" /></a>
+                <a href="#"><img src={navIcon4} alt="github" /></a>
+           
               </div>
-              <button className="btn btn-connect" onClick={() => console.log(connect)}>
+              <button className="btn btn-connect" onClick={() => console.log('connect')}>
                 <span> "Let's Connect!" </span>
               </button>
             </span>
@@ -82,7 +80,8 @@ export const NavBar = () => {
 
     )
   }
-}
+
+                
             
                 
             
