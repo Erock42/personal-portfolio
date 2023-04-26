@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container } from "react-bootstrap";
-import
+import logo from "../assets/img/logo.svg";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon4 from "../assets/img/github.svg";
+
+
+//font awesome icons?
+{/*import { CiFacebook } from "react-icons/ci";
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";*/}
+
+
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home")
@@ -25,6 +37,8 @@ export const NavBar = () => {
   }, []);
   
   const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  }
   
   // If user clicks on a link, it will navigate to the section coorelating to that link's name
     
@@ -32,7 +46,7 @@ export const NavBar = () => {
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="#home">
-            <img src={''} alt="logo" />
+            <img src={'logo'} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -40,14 +54,23 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Projects</Nav.Link>
+              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={ } alt="LinkedIn" />LinkedIn</a>
-                <a href="#"><img src={ } alt="Instagram" />Instagram</a>
-                <a href="#"><img src={ } alt="Facebook" />Facebook</a>
+              
+            // Social media icons- img or font awesome?
+                {/*<a href="#"><img src={<CiFacebook />} alt="facebook" /></a>
+                <a href="#"><img src={<AiOutlineGithub />} alt="github" /></a>
+                <a href="#"><img src={<AiOutlineLinkedin />} alt="linkedin" /></a>
+                <a href="#"><img src={<AiOutlineInstagram />} alt="instagram" /></a>*/}
+
+                <a href="#"><img src={navIcon1} alt="facebook" /></a>
+                <a href="#"><img src={} alt="github" /></a>
+                <a href="#"><img src={} alt="linkedin" /></a>
+                <a href="#"><img src={} alt="instagram" /></a>
+                
               </div>
               <button className="btn btn-connect" onClick={() => console.log(connect)}>
                 <span> "Let's Connect!" </span>
@@ -60,3 +83,7 @@ export const NavBar = () => {
     )
   }
 }
+            
+                
+            
+              
