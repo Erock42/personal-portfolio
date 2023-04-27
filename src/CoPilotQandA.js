@@ -27,6 +27,13 @@
 // a: You have already declared App on line 15 of your code
 // q: how do I make app.js work?
 // a: you need to import App from './App.js'
+// q: why is my github.svg not displaying on react app navbar?
+// q: why won't navicon4 display on my react app navbar?
+// a: you need to import the svg file into your react app
+// q: how do I import an svg file into my react app?
+// a: import logo from './assets/img/logo.svg';
+// q: how do I import gituhubIconDark into my react app?
+
 
 
 

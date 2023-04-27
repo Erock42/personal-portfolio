@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import navIcon4 from "../assets/img/github.svg";
+import navIcon4 from "../assets/img/icons8-github.svg";
 
 
 //font awesome icons?
@@ -49,7 +49,7 @@ export const NavBar = () => {
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="#home">
-            <img src={'logo'} alt="Logo" />
+            <img src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -63,9 +63,9 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
               
-                <a href="#"><img src={navIcon1} alt="facebook" /></a>
+                <a href="#"><img src={navIcon1} alt="linkedin" /></a>
                 <a href="#"><img src={navIcon2} alt="instagram" /></a>
-                <a href="#"><img src={navIcon3} alt="linkedin" /></a>
+                <a href="#"><img src={navIcon3} alt="facebook" /></a>
                 <a href="#"><img src={navIcon4} alt="github" /></a>
            
               </div>
