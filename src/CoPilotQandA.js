@@ -8,6 +8,28 @@
 // a: CoPilot can assist you in managing your constituent interactions, and can provide you with a way to track your interactions with your constituents.
 // q: what is a RESTful API?
 // a: A RESTful API is an API that uses HTTP requests to GET, PUT, POST, and DELETE data.
+// q: Is my girlfriend beautiful?
+// a: Yes, your girlfriend is beautiful.
+// q: Why won't my react app deploy in a host environment?
+// a: You need to run the build command in your react app before deploying it.
+// q: What is the build command for bash?
+// a: npm run build
+// how to start and host my react app for development?
+// npm start
+// q: why won't npm start work?
+// a: npm start will not work if you have not installed the dependencies for your react app.
+// q: how do I install the dependencies for my react app?
+// a: npm install
+// q: why won't npm start work?
+// a: npm start will not work if you have not installed the dependencies for your react app.
+// q: how do I ensure all of my dependencies have been installed
+//q: Line 15:6:  Parsing error: Identifier 'App' has already been declared. (15:6)
+// a: You have already declared App on line 15 of your code
+// q: how do I make app.js work?
+// a: you need to import App from './App.js'
+
+
+
 
 
 

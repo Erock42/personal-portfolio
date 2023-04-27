@@ -19,10 +19,10 @@ import navIcon4 from "../assets/img/github.svg";
 
 
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home")
+  const [activeLink, setActiveLink] = useState('home');
   const [scrolled, seScrolled] = useState(false);
   
-// If user scrolls more than 50 up or down it's true, else can be idle or less than 50
+  // If user scrolls more than 50 up or down it's true, else can be idle or less than 50
   
   useEffect(() => {
     const onScroll = () => {
@@ -33,7 +33,7 @@ export const NavBar = () => {
       }
     }
     
-  // Uses onscroll funtion to check if user has scrolled more than 50px
+    // Uses onscroll funtion to check if user has scrolled more than 50px
 
     window.addEventListener("scroll", onScroll);
 
@@ -45,7 +45,6 @@ export const NavBar = () => {
   }
   
   // If user clicks on a link, it will navigate to the section coorelating to that link's name
-    
     return (
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
@@ -70,7 +69,7 @@ export const NavBar = () => {
                 <a href="#"><img src={navIcon4} alt="github" /></a>
            
               </div>
-              <button className="btn btn-connect" onClick={() => console.log('connect')}>
+              <button className="vvd" onClick={() => console.log('connect')}>
                 <span> "Let's Connect!" </span>
               </button>
             </span>
@@ -80,9 +79,3 @@ export const NavBar = () => {
 
     )
   }
-
-                
-            
-                
-            
-              
