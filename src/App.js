@@ -15,7 +15,8 @@ class App extends Component {
         .then(res => this.setState({ data: res.express }))
         .catch(err => console.log(err));
     }
-      // fetching the GET route from the Express server which matches the GET route from server.js
+      
+    // fetching the GET route from the Express server (server.js)
     callBackendAPI = async () => {
       const response = await fetch('/express_backend');
       const body = await response.json();
@@ -26,6 +27,7 @@ class App extends Component {
       return body;
     };
   
+  // render/return method that displays the different components of the app (always export at bottom unless defer is used in some cases)
     render() {
       return (
         <div className="App">
