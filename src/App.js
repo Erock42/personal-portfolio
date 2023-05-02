@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './assets/img/logo.svg';
 import './App.css';
 import { NavBar } from './components/NavBar';
+import { Banner } from './components/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
       return (
         <div className="App">
           <NavBar />
+          <Banner />
         </div>
       );
     }
