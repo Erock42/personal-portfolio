@@ -64,8 +64,8 @@ export const NavBar = () => {
               <div className="social-icon">
               
                 <a href="#"><img src={navIcon1} alt="linkedin" /></a>
-                <a href="#"><img src={navIcon2} alt="instagram" /></a>
-                <a href="#"><img src={navIcon3} alt="facebook" /></a>
+                <a href="#"><img src={navIcon2} alt="facebook" /></a>
+                <a href="#"><img src={navIcon3} alt="instagram" /></a>
                 <a href="#"><img src={navIcon4} alt="github" /></a>
            
               </div>
