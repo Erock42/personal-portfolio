@@ -258,3 +258,88 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+
+/* Banner */
+
+.banner {
+  background-image: url('./assets/img/banner-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 125px 0 100px 0;
+  margin-top: 0;
+}
+
+.banner .tagline {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 10px;
+  letter-spacing: 0.8px;
+  background: linear-gradient(90deg, rgba(163, 53, 130, 0.5) 0%, rgba(100, 85, 113, 0.5) 100%);
+}
+
+.banner h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.8px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: #b8b8b8;
+  letter-spacing: 0.8px;
+  width: 95%;
+  line-height: 1.5em;
+}
+
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display:flex ; 
+  align-items: center
+}
+
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+/* Hover effect for button (arrow moves to right) */
+.banner button:hover svg {
+  margin-left: 25px;
+}
+
+.banner img {
+  animation: update 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }
+
+
+
+
+
