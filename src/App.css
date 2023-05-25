@@ -91,6 +91,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
 p.success {
 	color: green;
 }
@@ -110,14 +117,17 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
 }
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
-    margin-right: 42px;
+
+.navbar-brand img {
+  width: 10rem;
 }
 
 /* Opacity at normal is .75, opacity at hovered/click is 1 */
@@ -129,15 +139,18 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 42px;
   font-size: 18px;
   opacity: 0.75;
-  margin-left: inherit;
+  transition: 0.3s ease-in-out;
 }
+
+
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
 span.navbar-text {
-    display: flex;
     align-items: center;
+    margin: 40px 30px;
 }
 .social-icon {
     display: inline-block;
@@ -180,6 +193,7 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -303,6 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .tagline {
   font-size: 20px;
   font-weight: 700;
+  margin-top: 42px;
   margin-bottom: 16px;
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -386,6 +401,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   box-shadow: 0 0 0 5px #fff;
   transition: 0.3s ease-in-out;
 }
+
+/* Skills */
+
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.skill h5 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.skill p {
+  color: #b8b8b8;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  font-size: 20px;
+  margin: 14px 0 75px 0;
+}
+
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
 
 @keyframes updown {
   0% {
