@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://Erock42.github.io/personal-portfolio",
+  "homepage": "https://Erock42.github.io/personal-portfolio/",
   "private": true,
   "main": "index.js",
   "proxy": "http://localhost:3000",
