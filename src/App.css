@@ -449,6 +449,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/* Projects */
+
+.project {
+  padding: 80px 0;
+  position: relative;
+  background-color: #121212;
+}
+
+.project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.8px;
+  line-height: 1;
+}
+
+.project p {
+  color: #b8b8b8;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  font-size: 20px;
+  margin: 14px 0 30px 0;
+  text-align: center;
+  width: 50%;
+}
+
+.project .nav.nav-pills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0 auto;
+  width: 75%;
+  background-color: rgb(255 255 255/ 10%);
+}
+
+.project .nav.nav-pills .nav-item {
+ width: 33.33333%;
+}
+
+.project .nav.nav-pills .nav-link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+
 
 @keyframes updown {
   0% {
