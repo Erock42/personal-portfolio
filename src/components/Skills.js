@@ -4,7 +4,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
+import skillsImg from "../assets/img/MERN-stack-developer-skills.jpg";
 
 /* default react-carousel code copied from docs */
 export const Skills = () => {
@@ -34,7 +34,8 @@ export const Skills = () => {
               <div className="row">
                   <div className="col-12">
                       <div className="skill-bx wow zoomIn">
-                          <h2>Skills</h2>
+                <h2>Skills</h2>
+                <img className="skillsImg" src={skillsImg} alt="skills-image" />
                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                               <div className="item">
@@ -58,7 +59,6 @@ export const Skills = () => {
                   </div>
               </div>
           </div>
-          <img className="background-image-left" src={colorSharp} alt="Image" />
-      </section>
+        </section>
     )
   }
