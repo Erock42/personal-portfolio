@@ -10,6 +10,9 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -21,13 +24,13 @@
     "react-icons": "^4.8.0",
     "react-multi-carousel": "^2.8.4",
     "react-on-screen": "^2.1.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^4.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "react-scripts --max-http-header-size=1024 start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+    "gh-pages": "^3.0.0"
   }
 }
