@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/studying.png";
 
 // useState and useEffect are hooks that allow you to add React function components
@@ -15,7 +14,7 @@ import headerImg from "../assets/img/studying.png";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
+    const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer', 'Full Stack Developer'];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100 - Math.random() * 50);
     const period = 2000;
@@ -60,8 +59,8 @@ export const Banner = () => {
                         <span className="tagline">Hello, I'm Eric!</span>
                         <h1>I'm a</h1>
                         <h1> {""} <span className="wrap">{text}</span></h1>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-                    </Col>
+                        <p>""</p>
+                        </Col>
                     <Col xs={12} md={12} xl={12}>
                         <img src={headerImg} className="headerImg" width={500} height={500} alt="Header Img" />
                     </Col>
