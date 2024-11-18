@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { MailchimpSubscribe } from 'react-mailchimp-subscribe';
+//'import { MailchimpSubscribe } from 'react-mailchimp-subscribe';'//
 
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const url = process.env.REACT_APP_MAILCHIMP_URL;
-
 
 export const Contact = () => {
     const formInitialDetails = {    
@@ -85,6 +81,7 @@ return (
                             }
                         </Row>
                     </form>
+                   //MailchimpSubscribe url
                 </Col>
             </Row>
         </Container>
