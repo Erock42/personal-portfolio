@@ -4,7 +4,7 @@
   "homepage": "https://Erock42.github.io/personal-portfolio/",
   "private": true,
   "main": "index.js",
-  "proxy": "http://localhost:3000",
+  "proxy": "http://localhost: 5503",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-free": "^7.1.0",
