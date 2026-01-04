@@ -1,21 +1,38 @@
 const express = require('express');
-const port = process.env.PORT || 5503;
-const router = express.Router();
+const path = require('path');
 const http = require('http');
 
-// Set maxHttpHeaderSize option to increase the maximum header size limit
-const server = http.createServer({ maxHttpHeaderSize: 65536 }, app);
+const port = process.env.PORT || 5503;
 
-// Define routes and middleware here
+// Create an Express app
+const app = express();
 
-server.listen(5503, () => {
-  console.log('Server listening on port 5503');
+// Serve static files from the build folder (compiled React app)
+// Serve build at root (optional) and at /personal-portfolio to match built asset URLs
+app.use(express.static(path.join(__dirname, 'build')));
+app.use('/personal-portfolio', express.static(path.join(__dirname, 'build')));
+
+// Example API route (optional)
+app.get('/personal-portfolio', (req, res) => {
+  res.json({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
 });
 
-// This displays message that the server running and listening to specified port
-app.listen(port, () => console.log(`Listening on port ${port}`));
+// Endpoint to receive web-vitals metrics from the frontend for local testing
+app.post('/analytics', express.json(), (req, res) => {
+  // For now just log the metrics server-side so tools like Insomnia can inspect them
+  console.log('Received web-vitals metric:', req.body);
+  res.status(204).end();
+});
 
-//GET route
-router.get('/personal-portfolio', (req, res) => {
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' }); 
+// For single-page apps, serve index.html for any other route
+// Fallback for SPA: serve index.html for any route not handled above
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+// Increase max header size and create HTTP server
+const server = http.createServer({ maxHttpHeaderSize: 65536 }, app);
+
+server.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
