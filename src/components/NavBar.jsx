@@ -1,21 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/emkLogo.png";
+import logo from "../assets/img/EELogo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import navIcon4 from "../assets/img/icons8-github.svg";
-
-
-//font awesome icons?
-                /*import { CiFacebook } from "react-icons/ci";
-                import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";*/
- 
-// Social media icons- img or font awesome?
-                /*<a href="#"><img src={<CiFacebook />} alt="facebook" /></a>
-                <a href="#"><img src={<AiOutlineGithub />} alt="github" /></a>
-                <a href="#"><img src={<AiOutlineLinkedin />} alt="linkedin" /></a>
-                <a href="#"><img src={<AiOutlineInstagram />} alt="instagram" /></a>*/
 
 
 export const NavBar = () => {
